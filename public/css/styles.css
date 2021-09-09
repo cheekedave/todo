@@ -33,6 +33,10 @@ h1 {
   text-align: center;
 }
 
+.footer {
+  color: #ffffff;
+}
+
 div.heading a:link{ color:#ffffff; }
 
 .item {
