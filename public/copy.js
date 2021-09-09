@@ -36,7 +36,7 @@
   }
 
   $("#copyButton, #copyTarget").on("click", function() {
-    //copyToClipboard(document.getElementById("copyTarget"));
+    copyToClipboard(document.getElementById("copyTarget"));
     alert("copied");
   });
 })();

@@ -1,4 +1,4 @@
-$("#copyB, #copyTarget").on("click", function() {
+$("#copyButton").on("click", function() {
 
   alert("Clicked");
   //copyToClipboard(document.getElementById("copyTarget"));

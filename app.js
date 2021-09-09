@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@" + process.env.DBURI + "/" + process.env.DBNAME + process.env.DBOPTIONS, {useNewUrlParser: true});
+mongoose.connect("mongodb://127.0.0.1:27017", {useNewUrlParser: true});
+//mongoose.connect("mongodb+srv://" + process.env.DBUSER + ":" + process.env.DBPASS + "@" + process.env.DBURI + "/" + process.env.DBNAME + process.env.DBOPTIONS, {useNewUrlParser: true});
 
 
 const itemsSchema = {
