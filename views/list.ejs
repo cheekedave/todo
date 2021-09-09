@@ -1,6 +1,6 @@
 <%- include("header") -%>
 <div class="box heading">
-  <h1><%= listTitle %> List <a style="color: inherit;" onclick="alert('Copied Link...')"><i class="far fa-copy"></i></a></h1>
+  <h1><%= listTitle %> List <span id="copyB" class="input-group-addon btn" title="Click to Copy"><i class="far fa-copy"></i></span><span class="copied">Link Copied...</span></h1>
 </div>
 <div class="box heading">
   <h2><a href="/">New List</a></h2>
@@ -20,6 +20,7 @@
 
     <form class="item" action="/" method="post">
       <input type="text" name="newItem" placeholder="New Item Here" autocomplete="off">
+      <input type="hidden" id="copyTarget" value="/<%=listTitle %>">
       <button type="submit" name="list" value=<%= listTitle %>>+</button>
     </form>
 </div>
