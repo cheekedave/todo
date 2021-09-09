@@ -46,6 +46,11 @@ app.get('/favicon.ico', function(req, res) {
     res.end();
 });
 
+app.get('/robots.txt', function(req, res) {
+    res.status(204);
+    res.end();
+});
+
 app.get("/", function(req, res) {
 
   let uuid = nanoid.nanoid(10);
