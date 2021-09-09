@@ -41,6 +41,11 @@ const listSchema = {
 
 const List = mongoose.model("List", listSchema);
 
+app.get('/site.webmanifest', function(req, res) {
+    res.status(204);
+    res.end();
+});
+
 app.get('/favicon.ico', function(req, res) {
     res.status(204);
     res.end();
