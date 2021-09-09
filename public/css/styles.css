@@ -31,6 +31,8 @@ h1 {
   text-align: center;
 }
 
+div.heading a:link{ color:#ffffff; }
+
 .item {
   min-height: 70px;
   display: flex;
